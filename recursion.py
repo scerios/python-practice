@@ -39,3 +39,23 @@ def fibonacciMemo(i):
 
 for i in range(1, 1001):
     print(i, ":", fibonacciMemo(i))
+
+
+@lru_cache(maxsize=1000)
+def fibonacciLRU(j):
+    # Chech if the input is a positive integer (throw)
+    if type(j) != int:
+        raise TypeError("j must be a positive int")
+    if j < 1:
+        raise ValueError("j must be a positive int")
+
+    if j == 1:
+        return 1
+    elif j == 2:
+        return 1
+    elif j > 2:
+        return fibonacciLRU(j - 1) + fibonacciLRU(j - 2)
+
+
+for j in range(1, 501):
+    print(j, ":", fibonacciLRU(j))
