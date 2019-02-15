@@ -19,3 +19,6 @@ def rngNum():
 
 for i in range(10):
     print(rngNum())
+
+for j in range(10):
+    print(random.uniform(3, 7))
