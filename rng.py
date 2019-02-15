@@ -30,3 +30,9 @@ for k in range(20):
 # randint() generates a random whole number including both indexes
 for h in range(20):
     print(random.randint(1, 6))
+
+# random element from a list
+outcomes = ['rock', 'paper', 'scissors']
+
+for g in range(20):
+    print(random.choice(outcomes))
