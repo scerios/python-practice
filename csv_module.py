@@ -9,3 +9,7 @@ path = "C:\\Users\\Csirke\\greenfox\\Test Automation\\python-practice\\google_st
 file = open(path)
 for line in file:
     print(line)
+
+# Saving data in a list as lines
+lines = [line for line in open(path)]
+print(lines[0])
