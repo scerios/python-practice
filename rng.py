@@ -22,3 +22,7 @@ for i in range(10):
 
 for j in range(10):
     print(random.uniform(3, 7))
+
+# normalvariate() holds the numbers around the value of the first index
+for k in range(20):
+    print(random.normalvariate(5, 0.2))
