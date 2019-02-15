@@ -26,3 +26,7 @@ for j in range(10):
 # normalvariate() holds the numbers around the value of the first index
 for k in range(20):
     print(random.normalvariate(5, 0.2))
+
+# randint() generates a random whole number including both indexes
+for h in range(20):
+    print(random.randint(1, 6))
