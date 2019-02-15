@@ -13,3 +13,12 @@ print(peteDetails["isALilBitch"] + myDetails["isLearning"])
 # Give value to variable, if there is no value, show default
 peteLocation = peteDetails.get('location', None)
 print(peteLocation)
+
+# Iteration
+for key in myDetails.keys():
+    value = myDetails[key]
+    print(key, "=", value)
+
+print()
+for key, value in peteDetails.items():
+    print(key, "=", value)
