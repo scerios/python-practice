@@ -21,3 +21,10 @@ b = "The lenght of side b = "
 bSide = int(input(b))
 c = "The lenght of side c = "
 cSide = int(input(c))
+
+if aSide == bSide and bSide == cSide:
+    print("This is a Equilateral triangle")
+elif aSide == bSide or aSide == cSide or bSide == cSide:
+    print("This is an Isosceles triangle")
+else:
+    print("This is an Scalene triangle")
