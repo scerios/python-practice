@@ -29,3 +29,25 @@ tupleTime = timeit.timeit(stmt="(1,2,3,4,5)", number=10000000)
 
 print("Time to make list:", listTime)
 print("Time to make tuple:", tupleTime)
+
+empty_tuple = ()
+# Tuple with 1 value is just a string
+test0 = ("a")
+test1 = ("a",)
+test2 = ("a", "b")
+test3 = ("a", "b", "c")
+
+print(empty_tuple)
+print(test0)
+print(test1)
+print(test2)
+print(test3)
+
+# Another way to instanciate a tuple
+test4 = 1,
+test5 = 1, 2
+test6 = 1, 2, 3
+
+print(test4)
+print(test5)
+print(test6)
