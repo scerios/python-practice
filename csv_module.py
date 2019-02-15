@@ -16,3 +16,6 @@ print(lines[0])
 
 # Remove any leading or trailing whitespace
 print(lines[0].strip())
+
+# Division to smaller pieces
+print(lines[0].strip().split(','))
