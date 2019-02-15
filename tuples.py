@@ -51,3 +51,19 @@ test6 = 1, 2, 3
 print(test4)
 print(test5)
 print(test6)
+
+survey = (29, "Hungary", False)
+age = survey[0]
+country = survey[1]
+knowsPython = survey[2]
+
+print("Age:", age)
+print("Country:", country)
+print("Knows Python:", knowsPython)
+
+survey2 = (18, "USA", True)
+age2, country2, knowsPython2 = survey2
+
+print("Age:", age2)
+print("Country:", country2)
+print("Knows Python:", knowsPython2)
