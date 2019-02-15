@@ -13,3 +13,6 @@ for line in file:
 # Saving data in a list as lines
 lines = [line for line in open(path)]
 print(lines[0])
+
+# Remove any leading or trailing whitespace
+print(lines[0].strip())
