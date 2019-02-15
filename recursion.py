@@ -10,3 +10,32 @@ def fibonacci(n):
         return 1
     elif n > 2:
         return fibonacci(n - 1) + fibonacci(n - 2)
+
+
+for n in range(1, 101):
+  print(n, ":", fibonacci(n))
+
+# Memoization
+fibonacciCache = {}
+
+
+def fibonacciMemo(i):
+    # If we have cached the value, then return it
+    if i in fibonacciCache:
+        return fibonacciCache[i]
+
+    # Compute the Nth term
+    if i == 1:
+        save = 1
+    elif i == 2:
+        save = 1
+    elif i > 2:
+        save = fibonacciMemo(i - 1) + fibonacciMemo(i - 2)
+
+    # Cache the value an return it
+    fibonacciCache[i] = save
+    return save
+
+
+for i in range(1, 1001):
+    print(i, ":", fibonacciMemo(i))
