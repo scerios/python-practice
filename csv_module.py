@@ -19,3 +19,7 @@ print(lines[0].strip())
 
 # Division to smaller pieces
 print(lines[0].strip().split(','))
+
+dataset = [line.strip().split(',') for line in open(path)]
+print(dataset[0])
+print(dataset[1])
