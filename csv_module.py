@@ -51,3 +51,20 @@ for row in reader:
     info.append([date, open_price, high, low, close, volume, adj_close])
 
 print(info[0])
+
+# Writing data in a file while formatting
+returns_path = "C:\\Users\\Csirke\\greenfox\\Test Automation\\python-practice\\google_returns.csv"
+returns_file = open(returns_path, 'w')
+writer = csv.writer(returns_file)
+writer.writerow(["Date", "Return"])
+
+for i in range(len(info) - 1):
+    todays_row = info[i]
+    todays_date = todays_row[0]
+    todays_price = todays_row[-1]
+    yesterdays_row = info[i + 1]
+    yesterdays_price = yesterdays_row[-1]
+
+    daily_return = (todays_price - yesterdays_price) / yesterdays_price
+    formatted_date = todays_date.strftime('%m/%d/%Y')
+    writer.writerow(formatted_date, daily_return)
